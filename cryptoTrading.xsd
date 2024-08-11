@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="http://www.example.com/crypto" 
+           xmlns="http://www.example.com/crypto" 
+           elementFormDefault="qualified">
+
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cryptoTrading" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cryptoName" type="xs:string"/>
+                            <xs:element name="coinType" type="xs:string"/>
+                            <xs:element name="marketCap" type="xs:decimal"/>
+                            <xs:element name="priceUSD" type="xs:decimal"/>
+                            <xs:element name="volume24h" type="xs:decimal"/>
+                            <xs:element name="circulatingSupply" type="xs:decimal"/>
+                            <xs:element name="tradingPairs" type="xs:string"/>
+                            <xs:element name="exchangeName" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
